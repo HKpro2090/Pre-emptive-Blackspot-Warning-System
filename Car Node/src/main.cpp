@@ -9,12 +9,12 @@
 #include <FirebaseESP32.h>
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
-#define WIFI_SSID "005_fast"
-#define WIFI_PASSWORD "005thisisourwifigetout12345"
-#define API_KEY "AIzaSyAVY0Juz1QZTSvrwBTovboSvzPNlPBSn30 "
-#define DATABASE_URL "userappwsn-default-rtdb.firebaseio.com"
-#define USER_EMAIL "harikrishnan.vamsi@gmail.com"
-#define USER_PASSWORD "HKpro@2090"
+#define WIFI_SSID "**********"
+#define WIFI_PASSWORD "*********************"
+#define API_KEY "**********************"
+#define DATABASE_URL "************************"
+#define USER_EMAIL "************************"
+#define USER_PASSWORD "*****************"
 FirebaseData fbdo;
 FirebaseAuth auth;
 FirebaseConfig config;
