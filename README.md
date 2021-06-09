@@ -8,3 +8,5 @@ In this proposed system we have implemented geotagged IoT enabled NRF mesh nodes
 This repo deals with the Wireless Sensor Network part of the project. Will update the links to the other parts soon.
 
 ## Basic Working Diagram
+
+![Proposed Block Diagram](https://github.com/HKpro2090/Pre-emptive-Blackspot-Warning-System/blob/main/Proposed%20Block%20Diagram.png?raw=true)
