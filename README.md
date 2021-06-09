@@ -15,3 +15,18 @@ This repo deals with the Wireless Sensor Network part of the project. Will updat
 The mesh communication starts with Car Node sending LFC instruction (Looking For Coordinator). This instruction helps the Car Node to identify the nearby Coordinator Node. Once the LFC instruction is received by a Coordinator Node it acknowledges back with its Node ID and location. The acknowledgement is received by the Car Node, and it is saved in a linked list. After this, the Coordinator Node changes to a different communication pipe and talks to the nearby Dynamic Nodes to gather the information and sends it to the Car Node. The coordinator node sends CTD Instruction (Coordinator to Dynamic) which helps the node to identify the nearby Dynamic Nodes. Once the Dynamic Nodes receive the CTD instruction, they acknowledge back with their Node ID and location to the Coordinator Node. 
 
 Once the data of all the Dynamic Nodes are received, the Coordinator Node sends the information to the Car Node one by one and sends a DONE instruction to denote the end of communication between the coordinator node and the Car Node. Later the Dynamic and the Coordinator Nodes return to their initial states. Then the Car Node breaks down the messages and establishes communication with FireBase via Wi-Fi. Then the data of the nearby nodes and locations are updated in the FireBase. After successful communication, the Car Node returns to sending LFC to look for other coordinators. The blackspot coordinates updated in the FireBase database are synced to an Android Application automatically.
+
+## Hardware Used
+- Node 32s
+- nRF24L01+ PA LNA Wireless Transceiver Module with External Antenna
+- Arduino Uno R3
+
+
+## Libraries Used
+- RF24 (https://github.com/nRF24/RF24)
+- Firebase - ESP32 (https://github.com/mobizt/Firebase-ESP32)
+
+## Files and Folders Description
+Car Node - Contains the source code for the Car Node. This code is developed for ESP32 which has WiFi and Blutooth inbuilt. This code uses the WiFi to send data to Firebase.
+Coordinate Node - Contains the source code for Coordinator Node. This Code is developed for Arduino Uno.
+Dynamic Node - Contains the source code for Dynamic Node. This code is developed for Arduino Uno.
